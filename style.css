@@ -78,3 +78,43 @@ a {
 a:hover {
     color: #d47a20;
 }
+
+
+/* Homework 3 - Responsive Layout */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile layout */
+.collection-box {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Tablet layout */
+@media (min-width: 600px) {
+  body {
+    padding: 25px;
+  }
+}
+
+/* Desktop layout */
+@media (min-width: 1000px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+}
+
