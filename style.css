@@ -118,3 +118,47 @@ img {
   }
 }
 
+
+/* Homework 3 - CSS Grid Layout */
+
+/* Mobile - one column */
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+}
+
+.pokemon-grid > section {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+figure {
+  max-width: 100%;
+  margin: 15px 0;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Tablet - two columns */
+@media (min-width: 600px) {
+  .pokemon-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Desktop - three columns */
+@media (min-width: 1000px) {
+  .pokemon-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
