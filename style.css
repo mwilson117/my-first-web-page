@@ -160,5 +160,8 @@ nav ul {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
-
+a:focus-visible {
+  outline: 3px solid #ff9900;
+  outline-offset: 4px;
+}
 
